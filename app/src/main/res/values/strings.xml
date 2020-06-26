@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">WALLIPI</string>
+    <string name="app_slogan">Scroll &#8226; Select &#8226; Set</string>
+    <string name="app_powered_by1">Powered By</string>
+    <string name="app_powered_by2">Developer Depository</string>
+
+    <string name="register_greetings1">WELCOME</string>
+    <string name="register_greetings2">Getting you access to some\nhigh-quality wallpapers..</string>
+    <string name="register_feedback_default">Checking User Account..</string>
+    <string name="register_feedback1">Creating New Account..</string>
+    <string name="register_feedback2">Account Created! Logging in..</string>
+    <string name="register_feedback3">Error creating account!!!</string>
+
+    <string name="category_title">Categories</string>
+    <string name="category_message">Choose your favourite category</string>
+    <string name="category_animals">Animals</string>
+    <string name="category_architecture">Architecture</string>
+    <string name="category_arts_culture">Arts &amp; Culture</string>
+    <string name="category_business_work">Business &amp; Work</string>
+    <string name="category_cars">Cars</string>
+    <string name="category_cities">Cities</string>
+    <string name="category_experimental">Experimental</string>
+    <string name="category_marvel">Marvel</string>
+    <string name="category_minimalist">Minimalist</string>
+    <string name="category_nature">Nature</string>
+    <string name="category_people">People</string>
+    <string name="category_space">Space</string>
+    <string name="category_spirituality">Spirituality</string>
+    <string name="category_sports">Sports</string>
+    <string name="category_technology">Technology</string>
+    <string name="category_texture_patterns">Texture &amp; Patterns</string>
+    <string name="category_travel">Travel</string>
+    <string name="category_miscellaneous">Miscellaneous</string>
+
+    <string name="wallpaper_list_title_default">Category</string>
+    <string name="wallpaper_list_title2">Wallpapers</string>
+
+    <string name="set_wallpaper_btn">Set Wallpaper</string>
+
+
+    <string name="app_info_copyright">&#xa9; 2020 by Developer Depository</string>
+    <string name="app_info_version_name_default">Version</string>
+</resources>

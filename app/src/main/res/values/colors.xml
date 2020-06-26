@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EE4949</color>
+    <color name="colorPrimaryDark">#EE4949</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorBackground">#0E0B15</color>
+    <color name="colorView">#FFFFFF</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorViewLight">#800E0B15</color>
+    <color name="textMenuColor">#000000</color>
+
+    <color name="setWallpaperBtnBG1">#000000</color>
+    <color name="setWallpaperBtnBG2">#FFFFFF</color>
+    <color name="setWallpaperBtnText1">#FFFFFF</color>
+    <color name="setWallpaperBtnText2">#000000</color>
+</resources>

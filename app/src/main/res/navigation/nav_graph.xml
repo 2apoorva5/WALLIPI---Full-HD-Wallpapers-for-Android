@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.developerdepository.wallipi.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_registerFragment"
+            app:destination="@+id/registerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@+id/splashFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.developerdepository.wallipi.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_wallpapersCategoryFragment"
+            app:destination="@+id/wallpapersCategoryFragment"
+            app:enterAnim="@anim/fade_in_anim"
+            app:exitAnim="@anim/fade_out_anim"
+            app:popUpTo="@+id/registerFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/wallpapersCategoryFragment"
+        android:name="com.developerdepository.wallipi.WallpapersCategoryFragment"
+        android:label="fragment_wallpapers_category"
+        tools:layout="@layout/fragment_wallpapers_category" >
+        <action
+            android:id="@+id/action_wallpapersCategoryFragment_to_wallpapersListFragment"
+            app:destination="@id/wallpapersListFragment"
+            app:enterAnim="@anim/slide_in_anim"
+            app:exitAnim="@anim/fade_out_anim2"
+            app:popEnterAnim="@anim/fade_in_anim2"
+            app:popExitAnim="@anim/slide_out_anim"/>
+        <action
+            android:id="@+id/action_wallpapersCategoryFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wallpapersListFragment"
+        android:name="com.developerdepository.wallipi.WallpapersListFragment"
+        android:label="fragment_wallpapers_list"
+        tools:layout="@layout/fragment_wallpapers_list" >
+        <action
+            android:id="@+id/action_wallpapersListFragment_to_wallpaperViewFragment"
+            app:destination="@id/wallpaperViewFragment"
+            app:enterAnim="@anim/slide_in_anim"
+            app:exitAnim="@anim/fade_out_anim2"
+            app:popEnterAnim="@anim/fade_in_anim2"
+            app:popExitAnim="@anim/slide_out_anim"/>
+        <action
+            android:id="@+id/action_wallpapersListFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wallpaperViewFragment"
+        android:name="com.developerdepository.wallipi.WallpaperViewFragment"
+        android:label="fragment_wallpaper_view"
+        tools:layout="@layout/fragment_wallpaper_view" >
+        <action
+            android:id="@+id/action_wallpaperViewFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <argument
+            android:name="wallpaperImage"
+            app:argType="string"
+            android:defaultValue="null" />
+    </fragment>
+</navigation>
