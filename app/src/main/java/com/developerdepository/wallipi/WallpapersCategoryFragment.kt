@@ -8,6 +8,7 @@ import android.content.IntentSender.SendIntentException
 import android.graphics.Typeface
 import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
 import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
@@ -33,7 +34,6 @@ import com.skydoves.powermenu.PowerMenu
 import com.skydoves.powermenu.PowerMenuItem
 import hotchemi.android.rate.AppRate
 import kotlinx.android.synthetic.main.fragment_wallpapers_category.*
-import maes.tech.intentanim.CustomIntent
 
 class WallpapersCategoryFragment : Fragment() {
 
@@ -316,8 +316,12 @@ class WallpapersCategoryFragment : Fragment() {
                 startActivity(Intent.createChooser(shareIntent, "Share via"))
             } else if (powerMenu!!.selectedPosition == 3) {
                 powerMenu!!.dismiss()
-                startActivity(Intent(activity, AppInfoActivity::class.java))
-                CustomIntent.customType(activity, "bottom-to-up")
+                //redirect user to app Settings
+                val appInfoIntent =
+                    Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+                appInfoIntent.addCategory(Intent.CATEGORY_DEFAULT)
+                appInfoIntent.data = Uri.parse("package:" + requireActivity().packageName)
+                startActivity(appInfoIntent)
             }
         }
 

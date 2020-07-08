@@ -36,8 +36,4 @@
     <string name="wallpaper_list_title2">Wallpapers</string>
 
     <string name="set_wallpaper_btn">Set Wallpaper</string>
-
-
-    <string name="app_info_copyright">&#xa9; 2020 by Developer Depository</string>
-    <string name="app_info_version_name_default">Version</string>
 </resources>
