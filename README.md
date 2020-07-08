@@ -8,6 +8,8 @@
 
 ![Google Play](https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png)
 
+**WALLIPI - FHD Wallpapers** is a wallpaper application developed for Android users and is built in Kotlin using Android Jetpack Navigation Components along with Firebase Cloud Firestore MVVM Architecture.
+
 **WALLIPI** is your access to 1000+ free Full HD Wallpapers & Backgrounds - Wallpapers which fit your phone's screen perfectly, even without cropping.
 
 **WALLIPI** contains a number of categories for wallpapers & backgrounds which you can choose from according to your need and choice. Each category contains a number of Full HD images which you can use as your phone's wallpaper.
