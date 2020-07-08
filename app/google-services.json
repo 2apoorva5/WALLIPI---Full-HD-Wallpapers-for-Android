@@ -19,7 +19,7 @@
           "client_type": 1,
           "android_info": {
             "package_name": "com.developerdepository.wallipi",
-            "certificate_hash": "ac2c98b7df13c7db35df6c311d33b433130677d7"
+            "certificate_hash": "YOUR_OWN_CERTIFICATE_HASH"
           }
         },
         {
