@@ -32,14 +32,14 @@ class WallpapersViewModel : ViewModel() {
                         wallpapersList.value = result.toObjects(WallpapersModel::class.java)
                     } else {
                         wallpapersList.value =
-                            wallpapersList.value!!.plus(result.toObjects(WallpapersModel::class.java))
+                            wallpapersList.value?.plus(result.toObjects(WallpapersModel::class.java))
                     }
 
                     val lastItem: DocumentSnapshot = result.documents[result.size() - 1]
                     firebaseRepository.lastVisible = lastItem
                 }
             } else {
-                Log.d("VIEW_MODEL_LOG", "Error : ${it.exception!!.message}")
+                Log.d("VIEW_MODEL_LOG", "Error : ${it.exception?.message}")
             }
         }
     }

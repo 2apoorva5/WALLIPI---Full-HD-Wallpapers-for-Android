@@ -13,9 +13,9 @@ import com.bumptech.glide.request.target.Target
 import com.developerdepository.wallipi.R
 import kotlinx.android.synthetic.main.list_single_wallpaper_item.view.*
 
-public class WallpapersListAdapter(
+class WallpapersListAdapter(
     var wallpapersList: List<WallpapersModel>,
-    val clickListener: (WallpapersModel) -> Unit
+    private val clickListener: (WallpapersModel) -> Unit
 ) : RecyclerView.Adapter<WallpapersListAdapter.WallpapersViewHolder>() {
 
     class WallpapersViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -63,7 +63,7 @@ public class WallpapersListAdapter(
     }
 
     override fun onBindViewHolder(holder: WallpapersViewHolder, position: Int) {
-        (holder as WallpapersViewHolder).bind(wallpapersList[position], clickListener)
+        holder.bind(wallpapersList[position], clickListener)
     }
 
 }
