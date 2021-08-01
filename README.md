@@ -52,7 +52,7 @@ You can view any wallpaper beforehand to see how it will look on your phone's sc
 
 **Privacy Policy :**
 
-![Developer Depository](https://lh3.googleusercontent.com/ogw/ADGmqu8NgWrQa5JhxCvnEv91ICHNdKWYL4XmGucirNxr=s32-c-mo)
+![Developer Depository](https://lh3.googleusercontent.com/a-/AOh14GhIuMOs8u9r6k-hRtF74x3pqESrdDHwNGIJ_fwzGg=s96-c-rg-br100)
 
 
 Developer Depository led by Apoorva Ranjan owns the right to this app. The app users are bound to this [Privacy Policy](https://developerdepository.wixsite.com/wallipi-policies)
