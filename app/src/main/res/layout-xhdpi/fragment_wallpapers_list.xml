@@ -13,14 +13,14 @@
         android:layout_height="32dp"
         android:layout_marginStart="12dp"
         android:src="@drawable/ic_arrow_back"
-        android:tint="@color/colorView"
         android:scaleType="centerCrop"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:clickable="true"
         android:focusable="true"
         android:padding="3dp"
         app:layout_constraintTop_toTopOf="@+id/list_title"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/colorView" />
 
     <TextView
         android:id="@+id/list_title"

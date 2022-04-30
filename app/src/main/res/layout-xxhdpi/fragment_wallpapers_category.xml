@@ -18,10 +18,10 @@
         android:padding="4dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_menu"
-        android:tint="@color/colorView"
         app:layout_constraintBottom_toBottomOf="@+id/categories_title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/categories_title" />
+        app:layout_constraintTop_toTopOf="@+id/categories_title"
+        app:tint="@color/colorView" />
 
     <TextView
         android:id="@+id/categories_title"

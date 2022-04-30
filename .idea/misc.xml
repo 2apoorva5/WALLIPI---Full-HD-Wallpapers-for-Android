@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-hdpi/fragment_register.xml" value="0.5725" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-hdpi/fragment_splash.xml" value="0.5725" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-hdpi/fragment_wallpaper_view.xml" value="0.5725" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-hdpi/fragment_wallpapers_category.xml" value="0.5725" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-hdpi/fragment_wallpapers_list.xml" value="0.5725" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-hdpi/list_single_wallpaper_item.xml" value="0.5725" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-mdpi/fragment_register.xml" value="0.8851744186046512" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-mdpi/fragment_splash.xml" value="0.8851744186046512" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-mdpi/fragment_wallpaper_view.xml" value="0.8851744186046512" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-mdpi/fragment_wallpapers_category.xml" value="0.8851744186046512" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-mdpi/fragment_wallpapers_list.xml" value="0.8851744186046512" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-mdpi/list_single_wallpaper_item.xml" value="0.8851744186046512" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xhdpi/fragment_register.xml" value="0.3578125" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xhdpi/fragment_splash.xml" value="0.3578125" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xhdpi/fragment_wallpaper_view.xml" value="0.3578125" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xhdpi/fragment_wallpapers_category.xml" value="0.3578125" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xhdpi/fragment_wallpapers_list.xml" value="0.3578125" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xhdpi/list_single_wallpaper_item.xml" value="0.3578125" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xxhdpi/fragment_register.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xxhdpi/fragment_splash.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xxhdpi/fragment_wallpaper_view.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xxhdpi/fragment_wallpapers_category.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xxhdpi/fragment_wallpapers_list.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xxhdpi/list_single_wallpaper_item.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xxxhdpi/activity_main.xml" value="0.15472972972972973" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xxxhdpi/fragment_register.xml" value="0.15472972972972973" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xxxhdpi/fragment_splash.xml" value="0.15472972972972973" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xxxhdpi/fragment_wallpaper_view.xml" value="0.15472972972972973" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xxxhdpi/fragment_wallpapers_category.xml" value="0.15472972972972973" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xxxhdpi/fragment_wallpapers_list.xml" value="0.15472972972972973" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout-xxxhdpi/list_single_wallpaper_item.xml" value="0.15472972972972973" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout/fragment_register.xml" value="1.1534090909090908" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout/fragment_splash.xml" value="1.1534090909090908" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout/fragment_wallpapers_category.xml" value="1.1534090909090908" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout/fragment_wallpapers_list.xml" value="1.1534090909090908" />
+        <entry key="..\:/Users/apoor/AndroidStudioProjects/WalLipi/app/src/main/res/layout/list_single_wallpaper_item.xml" value="1.1534090909090908" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

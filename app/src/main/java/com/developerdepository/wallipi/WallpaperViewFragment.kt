@@ -1,6 +1,7 @@
 package com.developerdepository.wallipi
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.DownloadManager
 import android.app.WallpaperManager
@@ -148,6 +149,7 @@ class WallpaperViewFragment : Fragment() {
         }
     }
 
+    @SuppressLint("Range")
     fun downloadImage(url: String) {
         val directory = File(Environment.DIRECTORY_PICTURES)
 

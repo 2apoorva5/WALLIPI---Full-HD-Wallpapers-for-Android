@@ -329,7 +329,7 @@ class WallpapersCategoryFragment : Fragment() {
     override fun onStart() {
         super.onStart()
 
-        mAppUpdateManager = AppUpdateManagerFactory.create(context)
+        mAppUpdateManager = context?.let { AppUpdateManagerFactory.create(it) }
 
         installStateUpdatedListener =
             InstallStateUpdatedListener { state ->
@@ -337,7 +337,7 @@ class WallpapersCategoryFragment : Fragment() {
                     popupSnackbarForCompleteUpdate()
                 } else if (state.installStatus() == InstallStatus.INSTALLED) {
                     if (mAppUpdateManager != null) {
-                        mAppUpdateManager!!.unregisterListener(installStateUpdatedListener)
+                        installStateUpdatedListener?.let { mAppUpdateManager!!.unregisterListener(it) }
                     }
                 } else {
                     Log.i(
@@ -347,7 +347,7 @@ class WallpapersCategoryFragment : Fragment() {
                 }
             }
 
-        mAppUpdateManager!!.registerListener(installStateUpdatedListener)
+        mAppUpdateManager!!.registerListener(installStateUpdatedListener!!)
 
         mAppUpdateManager!!.appUpdateInfo
             .addOnSuccessListener { appUpdateInfo: AppUpdateInfo ->
@@ -355,12 +355,14 @@ class WallpapersCategoryFragment : Fragment() {
                     && appUpdateInfo.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE)
                 ) {
                     try {
-                        mAppUpdateManager!!.startUpdateFlowForResult(
-                            appUpdateInfo,
-                            AppUpdateType.FLEXIBLE,
-                            activity,
-                            RC_APP_UPDATE
-                        )
+                        activity?.let {
+                            mAppUpdateManager!!.startUpdateFlowForResult(
+                                appUpdateInfo,
+                                AppUpdateType.FLEXIBLE,
+                                it,
+                                RC_APP_UPDATE
+                            )
+                        }
                     } catch (e: SendIntentException) {
                         e.printStackTrace()
                     }
@@ -404,7 +406,7 @@ class WallpapersCategoryFragment : Fragment() {
     override fun onStop() {
         super.onStop()
         if (mAppUpdateManager != null) {
-            mAppUpdateManager!!.unregisterListener(installStateUpdatedListener)
+            installStateUpdatedListener?.let { mAppUpdateManager!!.unregisterListener(it) }
         }
     }
 }
