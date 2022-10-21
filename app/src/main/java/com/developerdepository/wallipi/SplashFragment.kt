@@ -39,13 +39,13 @@ class SplashFragment : Fragment() {
     override fun onStart() {
         super.onStart()
 
-        app_logo!!.startAnimation(topAnimation)
-        app_slogan!!.startAnimation(bottomAnimation)
-        app_powered_by1!!.startAnimation(bottomAnimation)
-        app_powered_by2!!.startAnimation(bottomAnimation)
+        app_logo?.startAnimation(topAnimation)
+        app_slogan?.startAnimation(bottomAnimation)
+        app_powered_by1?.startAnimation(bottomAnimation)
+        app_powered_by2?.startAnimation(bottomAnimation)
 
         Handler().postDelayed(Runnable {
-            navController!!.navigate(R.id.action_splashFragment_to_registerFragment)
+            navController?.navigate(R.id.action_splashFragment_to_registerFragment)
         }, 5000)
     }
 }

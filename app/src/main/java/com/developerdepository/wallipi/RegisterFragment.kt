@@ -28,24 +28,24 @@ class RegisterFragment : Fragment() {
 
         navController = Navigation.findNavController(view)
 
-        register_feedback!!.setText(R.string.register_feedback_default)
+        register_feedback?.setText(R.string.register_feedback_default)
     }
 
     override fun onStart() {
         super.onStart()
 
         if (firebaseAuth.currentUser == null) {
-            register_feedback!!.setText(R.string.register_feedback1)
+            register_feedback?.setText(R.string.register_feedback1)
             firebaseAuth.signInAnonymously().addOnCompleteListener {
                 if (it.isSuccessful) {
-                    register_feedback!!.setText(R.string.register_feedback2)
-                    navController!!.navigate(R.id.action_registerFragment_to_wallpapersCategoryFragment)
+                    register_feedback?.setText(R.string.register_feedback2)
+                    navController?.navigate(R.id.action_registerFragment_to_wallpapersCategoryFragment)
                 } else {
-                    register_feedback!!.setText(R.string.register_feedback3)
+                    register_feedback?.setText(R.string.register_feedback3)
                 }
             }
         } else {
-            navController!!.navigate(R.id.action_registerFragment_to_wallpapersCategoryFragment)
+            navController?.navigate(R.id.action_registerFragment_to_wallpapersCategoryFragment)
         }
     }
 }

@@ -41,18 +41,20 @@ class WallpapersListFragment : Fragment(), (WallpapersModel) -> Unit {
         navController = Navigation.findNavController(view)
 
         if (firebaseRepository.getUser() == null) {
-            navController!!.navigate(R.id.action_wallpapersListFragment_to_registerFragment)
+            navController?.navigate(R.id.action_wallpapersListFragment_to_registerFragment)
         }
 
-        list_title!!.setText(Common.wallpaperListTitle)
+        list_title?.text = Common.wallpaperListTitle
 
         back_arrow_btn.setOnClickListener {
             requireActivity().onBackPressed()
         }
 
-        wallpapers_list!!.setHasFixedSize(true)
-        wallpapers_list!!.layoutManager = GridLayoutManager(context, 2)
-        wallpapers_list!!.adapter = wallpapersListAdapter
+        wallpapers_list?.apply {
+            setHasFixedSize(true)
+            layoutManager = GridLayoutManager(context, 2)
+            adapter = wallpapersListAdapter
+        }
 
         //Reached Bottom of RecyclerView
         wallpapers_list.addOnScrollListener(object : RecyclerView.OnScrollListener() {
@@ -89,6 +91,6 @@ class WallpapersListFragment : Fragment(), (WallpapersModel) -> Unit {
             WallpapersListFragmentDirections.actionWallpapersListFragmentToWallpaperViewFragment(
                 wallpaper.image
             )
-        navController!!.navigate(action)
+        navController?.navigate(action)
     }
 }

@@ -21,14 +21,14 @@ class FirebaseRepository {
 
     fun queryWallpapers(): Task<QuerySnapshot> {
 
-        if (lastVisible == null) {
+        return if (lastVisible == null) {
             //Load First Page
-            return firebaseFirestore
+            firebaseFirestore
                 .collection(Common.categoryName)
                 .limit(10)
                 .get()
         } else {
-            return firebaseFirestore
+            firebaseFirestore
                 .collection(Common.categoryName)
                 .startAfter(lastVisible!!)
                 .limit(pageSize)
